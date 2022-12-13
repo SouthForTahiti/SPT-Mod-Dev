@@ -24,6 +24,18 @@ ENG_MED_category = {
 	}
 }
 
+GER_BAR_category = {
+	allowed = {
+		original_tag = GER
+	}
+}
+
+SOV_BAR_category = {
+	allowed = {
+		original_tag = SOV
+	}
+}
+
 ITA_MED_category = {
 	allowed = {
 		original_tag = ITA
@@ -56,4 +68,6 @@ SPT_tutorial_decisions = {
 		NOT = {has_country_flag = no_tutorial}
 	}
 }
+
+
 

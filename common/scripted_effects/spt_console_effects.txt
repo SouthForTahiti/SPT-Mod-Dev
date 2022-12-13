@@ -59,6 +59,37 @@ d_SPT_Remove_Med_Front = {
 	clr_global_flag = Med_War
 }
 
+d_SPT_Activate_Bar_Front = {
+	SOV = {
+		country_event = {
+			id = spt.100
+			days = 0
+		}
+	}
+	GER = {
+		country_event = {
+			id = spt.100
+			days = 0
+		}
+	}
+	set_global_flag = Barb_War
+	
+}
+
+d_SPT_Remove_Bar_Front = {
+	SOV = {
+		remove_power_balance = {
+			id = SOV_BAR_barb_front
+		}
+	}
+	GER = {
+		remove_power_balance = {
+			id = GER_BAR_barb_front
+		}
+	}
+	clr_global_flag = Barb_War
+}
+
 d_SPT_Start_WWTWO = {
 	ENG = {
 		add_to_faction = FRA

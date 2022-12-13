@@ -439,3 +439,36 @@ country_event = { # Kishi route (Full Manchukuo path)
 	}
 
 }
+
+
+
+country_event = {
+	id = spt.100 #Ginger - I'll go from 100 so we dont use the same event id
+	title = spt.100.t
+	desc = sptbar.1.desc
+	picture = GFX_report_event_soviet_soldiers
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				tag = SOV
+			}
+			set_power_balance = {
+				id = SOV_BAR_barb_front
+			}
+		}
+		else_if = {
+			limit = {
+				tag = GER
+			}
+			set_power_balance = {
+				id = GER_BAR_barb_front
+			}
+		}
+	}
+	
+	option = {
+		name = sptbar.1.a
+	}
+
+}

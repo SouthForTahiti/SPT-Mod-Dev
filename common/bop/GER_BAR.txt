@@ -1,0 +1,32 @@
+GER_BAR_barb_front = {
+	initial_value = -0.25
+	left_side = SOV_BAR_sov_side
+	right_side = GER_BAR_ger_side
+	decision_category = GER_BAR_category
+
+	range = {
+		id = GER_mid_gains
+		min = -0.25
+		max = 0.25
+	}
+	
+	side = {
+		id = SOV_BAR_sov_side
+		icon = GFX_focus_attack_soviet
+		range = {
+			id = SOV_low_gains
+			min = -1
+			max = -0.25
+		}
+	}
+
+	side = {
+		id = GER_BAR_ger_side
+		icon = GFX_focus_attack_germany
+		range = {
+			id = GER_high_gains
+			min = 0.25
+			max = 1
+		}
+	}
+} 

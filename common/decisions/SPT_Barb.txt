@@ -1,0 +1,30 @@
+GER_BAR_category = {
+	GER_BAR_winter_offensive = {
+		visible = {
+			has_global_flag = winter_offensive
+		}
+		days_remove = 90
+	}
+}
+
+SOV_BAR_category = {
+	SOV_BAR_winter_offensive = {
+		visible = {
+			has_global_flag = winter_offensive
+		}
+		days_remove = 90
+		complete_effect = {
+			add_timed_idea = {
+				idea = BAR_winter_offensive
+				days = 90
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				 clr_global_flag = winter_offensive
+			}
+		}
+		
+
+	}
+}

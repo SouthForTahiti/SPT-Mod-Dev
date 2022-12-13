@@ -47,6 +47,12 @@ ideas = {
 			}
 		}
 
+		BAR_winter_offensive = {
+			modifier = {
+				army_attack_factor = 0.2
+			}
+		}
+
 		
 
 
