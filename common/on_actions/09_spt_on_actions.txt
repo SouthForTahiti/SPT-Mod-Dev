@@ -460,8 +460,32 @@ on_actions = {
 
 				
 			}
-			
 
+			if = {
+				
+				limit = {
+					NOT = {
+						has_global_flag = fall_of_kiev 
+					}
+					FROM.FROM = {
+						OR = {
+							state = 202
+						}
+					}
+					FROM = {
+						is_in_allies = yes
+					}
+					ROOT = {
+						is_in_axis = yes
+					}
+				}
+
+				country_event = {
+					id = spt.101
+					days = 3
+				}
+
+			}
 		}
 	}
 
@@ -674,15 +698,36 @@ on_actions = {
 			if = {
 				limit = {
 					#has_global_flag =  Barb_War
+					#God help me
 					OR = {
-						date = "1936.2.1" #debug must remove
-						date = "1939.12.1"
-						date = "1940.12.1"
-						date = "1941.12.1"
-						date = "1942.12.1"
-						date = "1943.12.1"
-						date = "1944.12.1"
-						date = "1945.12.1"
+						AND = {
+							date > "1939.11.31"
+							date < "1939.12.2"
+						}
+						AND = {
+							date > "1940.11.31"
+							date < "1940.12.2"
+						}
+						AND = {
+							date > "1941.11.31"
+							date < "1941.12.2"
+						}
+						AND = {
+							date > "1942.11.31"
+							date < "1942.12.2"
+						}
+						AND = {
+							date > "1943.11.31"
+							date < "1943.12.2"
+						}
+						AND = {
+							date > "1944.11.31"
+							date < "1944.12.2"
+						}
+						AND = {
+							date > "1945.11.31"
+							date < "1945.12.2"
+						}
 					}
 				}			
 			}
@@ -695,5 +740,51 @@ on_actions = {
 			}
 
 		}
+
+		effect = {
+			if = {
+				limit = {
+					#has_global_flag =  Barb_War
+					OR = {
+						AND = {
+							date > "1939.6.31"
+							date < "1939.7.2"
+						}
+						AND = {
+							date > "1940.6.31"
+							date < "1940.7.2"
+						}
+						AND = {
+							date > "1941.6.31"
+							date < "1941.7.2"
+						}
+						AND = {
+							date > "1942.6.31"
+							date < "1942.7.2"
+						}
+						AND = {
+							date > "1943.6.31"
+							date < "1943.7.2"
+						}
+						AND = {
+							date > "1944.6.31"
+							date < "1944.7.2"
+						}
+						AND = {
+							date > "1945.6.31"
+							date < "1945.8.2"
+						}
+					}
+				}			
+			}
+			set_global_flag = summer_offensive
+			SOV = {
+				activate_decision = SOV_BAR_summer_offensive
+			}
+			GER = {
+				activate_decision = GER_BAR_summer_offensive
+			}
+
+		} 
 	}
 }

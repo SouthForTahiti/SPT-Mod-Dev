@@ -441,7 +441,7 @@ country_event = { # Kishi route (Full Manchukuo path)
 }
 
 
-
+#Barb war start
 country_event = {
 	id = spt.100 #Ginger - I'll go from 100 so we dont use the same event id
 	title = spt.100.t
@@ -468,7 +468,31 @@ country_event = {
 	}
 	
 	option = {
-		name = sptbar.1.a
+		name = spt.100.a
 	}
 
+}
+
+
+#Event when Germany capture kiev
+country_event = {
+	id = spt.101
+	title = spt.101.t
+	desc = spt.102.desc
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = spt.101.a
+		add_timed_idea = {
+			idea = BAR_soviet_offensive
+			days = 60
+		}
+	}
+	option = {
+		name = spt.101.b
+		add_timed_idea = {
+			idea = BAR_soviet_defensive
+			days = 60
+		}
+	}
 }

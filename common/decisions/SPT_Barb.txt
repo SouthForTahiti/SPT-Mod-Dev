@@ -5,6 +5,30 @@ GER_BAR_category = {
 		}
 		days_remove = 90
 	}
+
+	GER_BAR_summer_offensive = {
+		visible = {
+			has_global_flag = summer_offensive
+		}
+		days_remove = 90
+		complete_effect = {
+			hidden_effect = {
+				add_timed_idea = {
+					idea = BAR_GER_summer_offensive
+					days = 90
+				}
+		   }
+			
+		}
+		remove_effect = {
+			hidden_effect = {
+				 clr_global_flag = summer_offensive
+			}
+		}
+		
+
+	}
+
 }
 
 SOV_BAR_category = {
@@ -14,9 +38,11 @@ SOV_BAR_category = {
 		}
 		days_remove = 90
 		complete_effect = {
-			add_timed_idea = {
-				idea = BAR_winter_offensive
-				days = 90
+			hidden_effect = {
+				add_timed_idea = {
+					idea = BAR_SOV_winter_offensive
+					days = 90
+				}
 			}
 		}
 		remove_effect = {
@@ -25,6 +51,13 @@ SOV_BAR_category = {
 			}
 		}
 		
-
 	}
+
+	GER_BAR_summer_offensive = {
+		visible = {
+			has_global_flag = summer_offensive
+		}
+		days_remove = 90
+	}
+
 }

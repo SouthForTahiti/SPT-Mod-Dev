@@ -47,13 +47,33 @@ ideas = {
 			}
 		}
 
-		BAR_winter_offensive = {
+		BAR_SOV_winter_offensive = {
+			picture =  generic_war_preparation
+			
 			modifier = {
 				army_attack_factor = 0.2
 			}
 		}
 
-		
+		BAR_GER_summer_offensive = {
+			picture =  generic_war_preparation
+			
+			modifier = {
+				army_attack_factor = 0.2
+			}
+		}
+
+		BAR_soviet_offensive = {
+			modifier = {
+				
+			}
+		}
+		BAR_soviet_defensive = {
+			modifier = {
+				
+			}
+		}
+
 
 
 	}
