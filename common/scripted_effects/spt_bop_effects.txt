@@ -70,3 +70,39 @@ med_balance_eng_10_effect = {
 	}
 }
 
+barb_balance_sov_10_effect = {
+	#custom_effect_tooltip = med_front_eng_10_tt
+	hidden_effect = {
+		GER = {
+			add_power_balance_value = {
+				id = GER_BAR_barb_front
+				value = -0.1
+			}
+		}
+		SOV = {
+			add_power_balance_value = {
+				id = SOV_BAR_barb_front
+				value = 0.1
+			}
+		}
+	}
+}
+
+barb_balance_ger_10_effect = {
+	#custom_effect_tooltip = med_front_eng_10_tt
+	hidden_effect = {
+		GER = {
+			add_power_balance_value = {
+				id = GER_BAR_barb_front
+				value = 0.1
+			}
+		}
+		SOV = {
+			add_power_balance_value = {
+				id = SOV_BAR_barb_front
+				value = -0.1
+			}
+		}
+	}
+}
+

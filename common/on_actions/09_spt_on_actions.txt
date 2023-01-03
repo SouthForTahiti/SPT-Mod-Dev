@@ -460,7 +460,7 @@ on_actions = {
 
 				
 			}
-
+			#Kiev is taken
 			if = {
 				
 				limit = {
@@ -473,7 +473,7 @@ on_actions = {
 						}
 					}
 					FROM = {
-						is_in_allies = yes
+						original_tag = SOV
 					}
 					ROOT = {
 						is_in_axis = yes
@@ -486,6 +486,8 @@ on_actions = {
 				}
 
 			}
+			
+
 		}
 	}
 
@@ -692,7 +694,7 @@ on_actions = {
 		}
 	}
 
-	on_monthly = {
+	on_monthly_SOV = {
 		#Check if winter offensive should start
 		effect = {
 			if = {
@@ -730,18 +732,17 @@ on_actions = {
 						}
 					}
 				}			
-			}
-			set_global_flag = winter_offensive
-			SOV = {
-				activate_decision = SOV_BAR_winter_offensive
-			}
-			GER = {
-				activate_decision = GER_BAR_winter_offensive
+			
+				set_global_flag = winter_offensive
+				SOV = {
+					activate_decision = SOV_BAR_winter_offensive
+				}
+				GER = {
+					activate_decision = GER_BAR_winter_defense
+				}
+
 			}
 
-		}
-
-		effect = {
 			if = {
 				limit = {
 					#has_global_flag =  Barb_War
@@ -776,15 +777,15 @@ on_actions = {
 						}
 					}
 				}			
+			
+				set_global_flag = summer_offensive
+				SOV = {
+					activate_decision = SOV_BAR_summer_defense
+				}
+				GER = {
+					activate_decision = GER_BAR_summer_offensive
+				}
 			}
-			set_global_flag = summer_offensive
-			SOV = {
-				activate_decision = SOV_BAR_summer_offensive
-			}
-			GER = {
-				activate_decision = GER_BAR_summer_offensive
-			}
-
 		} 
 	}
 }

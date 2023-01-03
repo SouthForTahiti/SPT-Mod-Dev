@@ -445,7 +445,7 @@ country_event = { # Kishi route (Full Manchukuo path)
 country_event = {
 	id = spt.100 #Ginger - I'll go from 100 so we dont use the same event id
 	title = spt.100.t
-	desc = sptbar.1.desc
+	desc = spt.100.desc
 	picture = GFX_report_event_soviet_soldiers
 	is_triggered_only = yes
 	immediate = {
@@ -469,6 +469,7 @@ country_event = {
 	
 	option = {
 		name = spt.100.a
+		custom_effect_tooltip = barb_war_start_tt
 	}
 
 }
@@ -483,16 +484,16 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = spt.101.a
-		add_timed_idea = {
-			idea = BAR_soviet_offensive
-			days = 60
+		add_power_balance_modifier = {
+			id = SOV_BAR_barb_front
+			modifier = SOV_defense
 		}
 	}
 	option = {
 		name = spt.101.b
-		add_timed_idea = {
-			idea = BAR_soviet_defensive
-			days = 60
+		add_power_balance_modifier = {
+			id = SOV_BAR_barb_front
+			modifier = SOV_offense
 		}
 	}
 }

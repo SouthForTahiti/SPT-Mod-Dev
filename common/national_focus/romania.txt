@@ -2682,7 +2682,7 @@
 	focus = {
 		allow_branch = {always = no} #SPTChange hid focus	
 		
-		id = ROM_king_michaels_coup
+		id = ROM_
 		icon = GFX_focus_rom_coup
 		prerequisite = { focus = ROM_force_abdication focus = ROM_all_parties_must_end}
 		x = -1

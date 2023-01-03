@@ -1,32 +1,32 @@
 SOV_BAR_barb_front = {
-	initial_value = 0.75
-	left_side = GER_BAR_ger_side
-	right_side = SOV_BAR_sov_side
+	initial_value = 0
+	left_side = SOV_BAR_summer_defense
+	right_side = SOV_BAR_winter_offensive
 	decision_category = SOV_BAR_category
 
 	range = {
-		id = SOV_mid_gains
-		min = -0.25
-		max = 0.25
+		id = SOV_BAR_skirmish
+		min = 0.25
+		max = -0.25
 	}
 	
 	side = {
-		id = SOV_BAR_ger_side
-		icon = GFX_focus_attack_germany
+		id = SOV_BAR_summer_defense
+		icon = GFX_bop_BAR_defense
 		range = {
-			id = SOV_low_gains
+			id = SOV_BAR_summer_defense_range
 			min = -1
 			max = -0.25
 		}
 	}
-
 	side = {
-		id = SOV_BAR_sov_side
-		icon = GFX_focus_attack_soviet
+		id = SOV_BAR_winter_offensive
+		icon = GFX_bop_BAR_offensive
 		range = {
-			id = SOV_high_gains
+			id = SOV_BAR_winter_offensive_range
 			min = 0.25
 			max = 1
 		}
+	
 	}
 } 

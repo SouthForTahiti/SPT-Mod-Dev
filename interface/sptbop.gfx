@@ -15,5 +15,13 @@ spriteTypes = {
 		name = "GFX_bop_MED_ita_side"
 		texturefile = "gfx/interface/bop/bop_MED_ita_side.dds"
 	}
+	spriteType = {
+		name = "GFX_bop_BAR_offensive"
+		texturefile = "gfx/interface/bop/bop_BAR_offensive.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_BAR_defense"
+		texturefile = "gfx/interface/bop/bop_BAR_defense.dds"
+	}
 
 }

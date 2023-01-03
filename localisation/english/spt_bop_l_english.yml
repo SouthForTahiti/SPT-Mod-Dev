@@ -41,3 +41,12 @@
  ITA_MED_low_eng_dominance:0 "Low English Dominance"
  ITA_MED_medium_eng_dominance:0 "Medium English Dominance"
  ITA_MED_total_eng_dominance:0 "Total English Dominance"
+
+SOV_BAR_barb_front:0 "Operation Barbarossa"
+SOV_BAR_sov_side:0 "Soviet Progress"
+SOV_BAR_ger_side:0 "German Progress"
+SOV_BAR_limited_progess:0 "Limited Progress"
+SOV_BAR_ger_low_gains:0 "Low German Gains"
+SOV_BAR_ger_breakthrough:0 "German Breakthrough"
+SOV_BAR_ger_impending_victory:0 "Impending German Victory"
+SOV_BAR_ger_retreat:0 "German Retreat"
