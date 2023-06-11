@@ -15,4 +15,40 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 20 y = 1600 }
+
+	focus = {
+        id = political_effort
+        icon = GFX_goal_generic_demand_territory
+        x = 10
+        y = 0
+        cost = 10
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        available_if_capitulated = yes
+
+        completion_reward = {
+            add_political_power = 120
+        }
+
+	}
+	focus = {
+        id = jib
+        icon = GFX_goal_generic_demand_territory
+        x = 2
+        y = 2
+        cost = 10
+		
+		prerequisite={focus=political_effort}
+		relative_position_id=political_effort
+		
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        available_if_capitulated = yes
+
+        completion_reward = {
+            add_political_power = 120
+        }
+    }
 }
+
