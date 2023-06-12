@@ -121,7 +121,7 @@ focus_tree = {
         available_if_capitulated = yes
 
         completion_reward = {
-            #
+            #materials or civs?
         }
     }
     focus = {
